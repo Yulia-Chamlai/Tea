@@ -15,16 +15,19 @@
     <header class="header">
         <div class="container">
             <div class="header-wrapper">
-                <div class="header__menu-btn">
+                <button class="header__menu-btn">
                     <span></span>
                     <span></span>
                     <span></span>
                     <span></span>
-                </div>
+                </button>
                 <a class="header__logo" href="#">
                     <img class="header__logo-img" src="./images/logo.svg" alt="logo">
                 </a>                
                 <nav class="header__nav nav">
+                    <button class="header__menu-close">
+                        <img src="./images/close.svg" alt="Close icon">
+                    </button>
                     <ul class="nav__list">
                         <li class="nav__list-item">
                             <a class="nav__list-link" href="#">Black</a>
@@ -42,26 +45,64 @@
                             <a class="nav__list-link" href="#">Pu-erh</a>
                         </li>
                     </ul>
+                    <div class="mobile-menu">
+                        <ul class="mobile-menu__list">
+                            <li class="mobile-menu__item">
+                                <a class="mobile-menu__link" href="#">
+                                    Contact Us
+                                </a>
+                            </li>
+                            <li class="mobile-menu__item">
+                                <a class="mobile-menu__link" href="#">
+                                    Our Blog 
+                                </a>
+                            </li>
+                            <li class="mobile-menu__item">
+                                <a class="mobile-menu__link" href="#">
+                                    Shipping and Delivery
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="mobile-actions">
+                        <ul class="mobile-actions__list">
+                            <li class="mobile-actions__item">
+                                <a class="mobile-actions__link" href="#">
+                                    <img class="mobile-actions__img" src="./images/bag.svg" alt="Bag" >
+                                </a>
+                            </li>
+                            <li class="mobile-actions__item">
+                                <a class="mobile-actions__link" href="#">
+                                    <img class="mobile-actions__img" src="./images/user.svg" alt="User" >
+                                </a>                      
+                            </li>
+                            <li class="mobile-actions__item">
+                                <a class="mobile-actions__link" href="#">
+                                    <img class="mobile-actions__img" src="./images/search.svg" alt="Search icon" >
+                                </a>                   
+                            </li>
+                        </ul>
+                    </div>
                 </nav>
                 <div class="header__actions">
                     <ul class="header__actions-list">
                         <li class="header__actions-item">
                             <a class="header__actions-link" href="#">
-                                <img class="header__actins-img" src="./images/bag.svg" alt="Bag" >
+                                <img class="header__actions-img" src="./images/bag.svg" alt="Bag" >
                             </a>
                         </li>
                         <li class="header__actions-item">
                             <a class="header__actions-link" href="#">
-                                <img class="header__actins-img" src="./images/user.svg" alt="User" >
+                                <img class="header__actions-img" src="./images/user.svg" alt="User" >
                             </a>                      
                         </li>
                         <li class="header__actions-item">
                             <a class="header__actions-link" href="#">
-                                <img class="header__actins-img" src="./images/search.svg" alt="Search icon" >
+                                <img class="header__actions-img" src="./images/search.svg" alt="Search icon" >
                             </a>                   
                         </li>
                     </ul>
-                </div>
+                </div>                
             </div>
         </div>
     </header>
@@ -83,6 +124,56 @@
                  it's a way of life and a way to connect with our loved ones."
             </p>
         </blockquote>
+        <section class="collection">
+            <div class="container">
+                <h2 class="collection__title title">
+                    Explore our Collections
+                </h2>
+                <div class="collection__inner">
+                    <div class="collection__item black">
+                        <a class="collection__item-img" href="#">
+                            <img src="./images/collection/item-1.png" alt="Tea" >
+                        </a>
+                        <a class="collection__item-text" href="#">
+                           <p>Black</p>
+                        </a>
+                    </div>
+                    <div class="collection__item green">
+                        <a class="collection__item-img" href="#">
+                            <img src="./images/collection/item-2.png" alt="Tea" >
+                        </a>
+                        <a class="collection__item-text" href="#">
+                           <p>Green</p>
+                        </a>
+                    </div>
+                    <div class="collection__item white">
+                        <a class="collection__item-img" href="#">
+                            <img src="./images/collection/item-3.png" alt="Tea" >
+                        </a>
+                        <a class="collection__item-text" href="#">
+                           <p>White</p>
+                        </a>
+                    </div>
+                    <div class="collection__item oolong">
+                        <a class="collection__item-img" href="#">
+                            <img src="./images/collection/item-4.png" alt="Tea" >
+                        </a>
+                        <a class="collection__item-text" href="#">
+                           <p>Oolong</p>
+                        </a>
+                    </div>
+                    <div class="collection__item pu-erh">
+                        <a class="collection__item-img" href="#">
+                            <img src="./images/collection/item-5.png" alt="Tea" >
+                        </a>
+                        <a class="collection__item-text" href="#">
+                           <p>Pu-erh</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
+    <script src="./script.js"></script>
 </body>
 </html>
