@@ -107,12 +107,39 @@
         border: 1px solid $main-color;
     }
 
-    &__input-privacy {
+    &__privacy {
         font-weight: 300;
         font-size: 13px;
-        line-height: 1.5;
-       
-        
+        line-height: 1.5;          
+        position: relative;   
+    }
+    &__privacy span{
+        position: absolute;
+        left: 0;
+        top: 5px;
+        display: inline-block;        
+        width: 10px;
+        height: 10px;
+        border: 1px solid $main-color;
+    }
+    &__privacy-input{
+        position: absolute;
+        width: 0;
+        height: 0;
+        clip: rect(0,0,0,0);
+        overflow: hidden;
+    }  
+    &__privacy-text{
+        padding-left: 19px;
+    }
+    &__privacy-input:checked + span::before{
+        position: absolute;
+        content: '';
+        width: 6px;
+        height: 5px;
+        background-color: $main-color;
+        left: 1px;        
+        top: 2px;       
     }
 }
 

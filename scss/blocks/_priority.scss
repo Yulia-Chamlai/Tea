@@ -18,8 +18,8 @@
     
     &__inner {
         display: grid;
-        grid-template-columns: repeat(4,1fr);
-        column-gap: 49px;
+        grid-template-columns: 1fr 1fr 294px 1fr;
+        column-gap: 45px;
         @media(max-width:1000px){
             grid-template-columns: repeat(2,1fr);
         }
@@ -47,11 +47,23 @@
         font-size: 30px;
         line-height: 41px;
         margin-bottom: 10px;
+        @media(max-width:360px){
+            font-size: 20px;
+            line-height: 30px;
+        }
     }
     &__item-text {
+        font-size: 20px;
         line-height: 27px;
         font-weight: 600;
         margin-bottom: 40px;
+        @media(max-width:360px){
+            font-size: 10px;
+            line-height: 14px;
+            text-transform: uppercase;
+            font-weight: 300;
+            margin-bottom: 5px;
+        }
     }    
 
     &__img {

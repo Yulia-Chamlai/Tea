@@ -1,0 +1,143 @@
+.footer {
+    padding: 100px 0 25px;
+    background-color: $bg-color;    
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__products-list {
+        max-width: 97px;
+        width: 100%;
+        margin-right: 213px;
+    }
+
+    &__products-title,
+    &__company-title,
+    &__contacts-title {
+       margin-bottom: 50px;
+    }
+    
+    &__products-link,
+    &__company-link {
+        font-size: 16px;
+        line-height: 22px;
+        margin-bottom: 20px;
+        display: inline-block;
+    }
+    &__company-list {
+        max-width: 155px;
+        width: 100%;
+        margin-right: 155px;
+    }
+         
+
+    &__contacts-title {
+        text-align: end;
+        margin-right: 139px;
+    }
+
+    &__contacts-box {
+        display: flex;
+        justify-content: space-between;
+        gap: 0 40px;
+    }
+
+    &__quote {
+        max-width: 269px;
+    }
+
+    &__quote-text {
+        margin: 0;
+        font-size: 16px;
+        line-height: 22px;
+        font-style: italic;
+        margin-bottom: 20px;
+        
+    }
+
+    &__quote-author {
+        max-width: 129px;
+        width: 100%;
+        font-size: 12px;
+        line-height: 16px;
+    }    
+
+    &__info {
+        max-width: 270px;
+        width: 100%;
+    }    
+
+    &__text {
+        font-size: 13px;
+        line-height: 18px;
+        margin-bottom: 20px;
+    }
+
+    &__info-box{
+        display: grid;
+        grid-template-areas: 
+        "logo phone "
+        "logo email "
+        "logo social ";
+    }
+     
+
+    &__logo-img {
+        grid-area: logo;
+        max-width: 57px;
+    }
+  
+
+    &__phone {
+        grid-area: phone;
+        font-size: 13px;
+        line-height: 18px;
+        padding-left: 32px;
+       margin: 20px 0;
+        &::before{
+            background-image: url('./images/phone.svg');
+        }
+    }
+   
+
+    &__email {
+        grid-area: email;
+        font-size: 13px;
+        line-height: 18px;
+        margin-bottom: 50px;
+        &::before{
+            background-image: url('./images/email.svg');
+        }
+    }
+    &__phone,
+    &__email{
+        padding-left: 32px;
+        position: relative;
+        &::before{
+            position: absolute;
+            content: '';
+            top: 0;
+            left: 0;
+            width: 22px;
+            height: 22px;
+            background-repeat: no-repeat;
+        }
+    }
+    
+    &__social-list {
+        grid-area: social;
+        display: flex;
+        gap: 0 20px;
+    }
+   
+}
+
+.footer-title{
+    color: $main-color;
+    font-family: $title-font;
+    font-size: 24px;    
+    font-weight: 400;
+    line-height: 29px;
+}
